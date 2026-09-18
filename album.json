@@ -1,0 +1,2246 @@
+{
+  "title": "得㷫 DAKHING",
+  "artist": "粥",
+  "description": "12 首正篇，3 首 Bonus Track。沿着音乐，从冲源走向伶仃洋。",
+  "cover": "cover.jpg",
+  "tracks": [
+    {
+      "title": "冲源 intro",
+      "src": "media/01.mp3",
+      "duration": 34,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作曲 : 粥"
+        },
+        {
+          "time": null,
+          "text": "(溪流水声)（农村环境采样纯音乐）"
+        }
+      ]
+    },
+    {
+      "title": "竹篙粉 D Block",
+      "src": "media/02.mp3",
+      "duration": 127,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥"
+        },
+        {
+          "time": null,
+          "text": "『粥MADE』"
+        },
+        {
+          "time": null,
+          "text": "未经著作权人书面许可，不得以任何方式（包括翻唱、翻录等）使用"
+        },
+        {
+          "time": null,
+          "text": "朝早过隔离巷买早餐 吃竹篙粉"
+        },
+        {
+          "time": null,
+          "text": "翻来到德庆第一餐 吃竹篙粉"
+        },
+        {
+          "time": null,
+          "text": "踩单车一路唠到西湾 搵竹篙粉"
+        },
+        {
+          "time": null,
+          "text": "补充能量嗯艮去爬香山 吃竹篙粉"
+        },
+        {
+          "time": null,
+          "text": "每种方言都应该被撑起"
+        },
+        {
+          "time": null,
+          "text": "不适合写？只是你们没有能力"
+        },
+        {
+          "time": null,
+          "text": "词曲编混演早不用向谁证明"
+        },
+        {
+          "time": null,
+          "text": "母语羞涩 我不存在这种问题"
+        },
+        {
+          "time": null,
+          "text": "无人带队我冲前锋你地兜后面"
+        },
+        {
+          "time": null,
+          "text": "粤语唔标准我口音来自勾漏片"
+        },
+        {
+          "time": null,
+          "text": "咪谰new wave你啲思路仲系似旧年"
+        },
+        {
+          "time": null,
+          "text": "似晒婴儿学步 不如着翻纸尿片"
+        },
+        {
+          "time": null,
+          "text": "食肠粉忆竹篙 从县城到广州"
+        },
+        {
+          "time": null,
+          "text": "我做嘢太过风骚 又反叛又讲究"
+        },
+        {
+          "time": null,
+          "text": "做编曲兼填词 搵饭食靠双手"
+        },
+        {
+          "time": null,
+          "text": "啲差生文具多 佢实质系憨鸠"
+        },
+        {
+          "time": null,
+          "text": "戴块漏野表 你以为系G shock"
+        },
+        {
+          "time": null,
+          "text": "我出身係农村 生长係D Block"
+        },
+        {
+          "time": null,
+          "text": "扮嗮来佬蟹 啲壳佢唔识剥"
+        },
+        {
+          "time": null,
+          "text": "start it from the bottom我自己就系hiphop"
+        },
+        {
+          "time": null,
+          "text": "I been rockin' wit my 嘿佬 since day one"
+        },
+        {
+          "time": null,
+          "text": "西江河的Mercy 所以他们都会问"
+        },
+        {
+          "time": null,
+          "text": "新人王似瘦恒凌晨三点钟起身"
+        },
+        {
+          "time": null,
+          "text": "切都在老火锅和清哥摆起龙门阵"
+        },
+        {
+          "time": null,
+          "text": "中咧"
+        },
+        {
+          "time": null,
+          "text": "跟中原兄弟cooking hot shyt"
+        },
+        {
+          "time": null,
+          "text": "all my 阿达 got that sauce"
+        },
+        {
+          "time": null,
+          "text": "来我现场moshpit"
+        },
+        {
+          "time": null,
+          "text": "不会觉得差劲 我代表这座小城"
+        },
+        {
+          "time": null,
+          "text": "塞你两个皇帝柑再请你吃竹篙粉"
+        },
+        {
+          "time": null,
+          "text": "朝早过隔离巷买早餐 吃竹篙粉"
+        },
+        {
+          "time": null,
+          "text": "翻来到德庆第一餐 吃竹篙粉"
+        },
+        {
+          "time": null,
+          "text": "踩单车一路唠到西湾 搵竹篙粉"
+        },
+        {
+          "time": null,
+          "text": "补充能量嗯艮去爬香山 吃竹篙粉"
+        },
+        {
+          "time": null,
+          "text": "每种方言都应该被撑起"
+        },
+        {
+          "time": null,
+          "text": "不适合写？只是你们没有能力"
+        },
+        {
+          "time": null,
+          "text": "词曲编混演早不用向谁证明"
+        },
+        {
+          "time": null,
+          "text": "母语羞涩 我不存在这种问题"
+        }
+      ]
+    },
+    {
+      "title": "临江仙 Taoist Life",
+      "src": "media/03.mp3",
+      "duration": 123,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥/费思侯"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥/费思侯"
+        },
+        {
+          "time": null,
+          "text": "未经著作权人书面许可，不得以任何方式(包括翻唱、翻录等)使用"
+        },
+        {
+          "time": null,
+          "text": "Sliding on the beach 我哋就 临江仙"
+        },
+        {
+          "time": null,
+          "text": "斟杯散喃敬月当我夜擒窗边"
+        },
+        {
+          "time": null,
+          "text": "烂衫烂裤有乜所谓又何必光鲜"
+        },
+        {
+          "time": null,
+          "text": "天地做床铺 罗渔火来装点"
+        },
+        {
+          "time": null,
+          "text": "出世定入世 我信条系无为"
+        },
+        {
+          "time": null,
+          "text": "拱手拜天尊 唔系孙悟空拜菩提"
+        },
+        {
+          "time": null,
+          "text": "以中足乐 不断提高造诣"
+        },
+        {
+          "time": null,
+          "text": "世人见我似野花丛中生出荼靡"
+        },
+        {
+          "time": null,
+          "text": "从河南搬到北面"
+        },
+        {
+          "time": null,
+          "text": "揸下思域揸到卡宴"
+        },
+        {
+          "time": null,
+          "text": "吔杯面涯到鲍翅"
+        },
+        {
+          "time": null,
+          "text": "哎 系城中村望住江岸线"
+        },
+        {
+          "time": null,
+          "text": "四条??两只音响一部电脑gon make it pop"
+        },
+        {
+          "time": null,
+          "text": "街巷度太多傻嘿加大音量费撚事听距地霎"
+        },
+        {
+          "time": null,
+          "text": "冲出呢个地方sorry啊 同你地唔夹"
+        },
+        {
+          "time": null,
+          "text": "我哋需要银纸堆到好似成座广州塔"
+        },
+        {
+          "time": null,
+          "text": "冇时间睇你头耷耷"
+        },
+        {
+          "time": null,
+          "text": "Im savage imma go up up"
+        },
+        {
+          "time": null,
+          "text": "出面世界星光熠熠"
+        },
+        {
+          "time": null,
+          "text": "摸金牛大肆忽 摸金牛大肆忽"
+        },
+        {
+          "time": null,
+          "text": "Sliding on the beach 我哋就 临江仙"
+        },
+        {
+          "time": null,
+          "text": "斟杯散喃敬月当我夜擒窗边"
+        },
+        {
+          "time": null,
+          "text": "烂衫烂裤有乜所谓又何必光鲜"
+        },
+        {
+          "time": null,
+          "text": "天地做床铺 罗渔火来装点"
+        },
+        {
+          "time": null,
+          "text": "出世定入世 我信条系无为"
+        },
+        {
+          "time": null,
+          "text": "拱手拜天尊 唔系孙悟空拜菩提"
+        },
+        {
+          "time": null,
+          "text": "以中足乐 不断提高造诣"
+        },
+        {
+          "time": null,
+          "text": "世人见我似野花丛中生出荼靡"
+        },
+        {
+          "time": null,
+          "text": "唔使入深山 我心里有道"
+        },
+        {
+          "time": null,
+          "text": "烟火中修行驱散身边嘅雾"
+        },
+        {
+          "time": null,
+          "text": "阴阳五行八卦奇门占你今天嘅路"
+        },
+        {
+          "time": null,
+          "text": "你感觉新鲜lil bro"
+        },
+        {
+          "time": null,
+          "text": "专心做早课 咪理只蚊先"
+        },
+        {
+          "time": null,
+          "text": "要心静去品味老祖宗传落嘅经典"
+        },
+        {
+          "time": null,
+          "text": "翻开紫微斗数 抬头看会有星闪"
+        },
+        {
+          "time": null,
+          "text": "生而不有 长而不宰 几时都保持清醒"
+        },
+        {
+          "time": null,
+          "text": "虽说生死有命 这世间有时惊险"
+        },
+        {
+          "time": null,
+          "text": "玩钱 权嘅比拼但天道视万物皆刍狗"
+        },
+        {
+          "time": null,
+          "text": "再辗转多几年蚍蜉撼树损失嗮所有"
+        },
+        {
+          "time": null,
+          "text": "将个啲人面兽心收录于畜生图样"
+        },
+        {
+          "time": null,
+          "text": "我只求念头通达 福生无量"
+        }
+      ]
+    },
+    {
+      "title": "登云录 hooD story",
+      "src": "media/04.mp3",
+      "duration": 135,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥"
+        },
+        {
+          "time": null,
+          "text": "红色胶凳卫生筷"
+        },
+        {
+          "time": null,
+          "text": "要三条粉浇卤汁酱油"
+        },
+        {
+          "time": null,
+          "text": "拿碗白粥漱个口"
+        },
+        {
+          "time": null,
+          "text": "风云变幻他护着头"
+        },
+        {
+          "time": null,
+          "text": "疲倦的双眼看事物变迁"
+        },
+        {
+          "time": null,
+          "text": "妖孽藏世间这条路艰险"
+        },
+        {
+          "time": null,
+          "text": "Rundown Spaz smoked 2-men-pack"
+        },
+        {
+          "time": null,
+          "text": "你们到了我手里保证不见血"
+        },
+        {
+          "time": null,
+          "text": "自细住係hood 但唔系ghetto"
+        },
+        {
+          "time": null,
+          "text": "牛腩竹篙粉 来自登云街道"
+        },
+        {
+          "time": null,
+          "text": "文学同艺术 保持我态度"
+        },
+        {
+          "time": null,
+          "text": "读到研究生成为细路嘅楷模"
+        },
+        {
+          "time": null,
+          "text": "听过我把声？"
+        },
+        {
+          "time": null,
+          "text": "三元塔"
+        },
+        {
+          "time": null,
+          "text": "德中啲靓又pull up on my block"
+        },
+        {
+          "time": null,
+          "text": "某再惹你老豆老母发ηyup"
+        },
+        {
+          "time": null,
+          "text": "定个人生目标 咪无厘搭飒"
+        },
+        {
+          "time": null,
+          "text": "hooD story"
+        },
+        {
+          "time": null,
+          "text": "hooD story"
+        },
+        {
+          "time": null,
+          "text": "hooD story"
+        },
+        {
+          "time": null,
+          "text": "hooD story"
+        },
+        {
+          "time": null,
+          "text": "We in some hooD story"
+        },
+        {
+          "time": null,
+          "text": "hooD story"
+        },
+        {
+          "time": null,
+          "text": "Yeah hooD story"
+        },
+        {
+          "time": null,
+          "text": "Got some hooD story"
+        },
+        {
+          "time": null,
+          "text": "Listen"
+        },
+        {
+          "time": null,
+          "text": "他当年差零点五分考不上市里的重点高中"
+        },
+        {
+          "time": null,
+          "text": "在昏暗的房间他心情乱得像巷子里的交通"
+        },
+        {
+          "time": null,
+          "text": "背负欠债家里的窘境 不想辜负街坊的憧憬"
+        },
+        {
+          "time": null,
+          "text": "沾满灰尘的孩子依然会向往月光的空明"
+        },
+        {
+          "time": null,
+          "text": "粤运车三年 伴着西江和山脉蜿蜒"
+        },
+        {
+          "time": null,
+          "text": "父亲说把它当成个跳板 要登上云端还少不了攀岩"
+        },
+        {
+          "time": null,
+          "text": "发型屋对面竹篙粉店 吃完发着呆靠在窗前"
+        },
+        {
+          "time": null,
+          "text": "还有十分钟就要离开 喝了妈妈煮的白粥回味甘甜"
+        },
+        {
+          "time": null,
+          "text": "Set it off"
+        },
+        {
+          "time": null,
+          "text": "我在D Block set it off"
+        },
+        {
+          "time": null,
+          "text": "滑下隔壁巷的斜坡"
+        },
+        {
+          "time": null,
+          "text": "脚踏低帮air force"
+        },
+        {
+          "time": null,
+          "text": "不够多"
+        },
+        {
+          "time": null,
+          "text": "U ain't believe I want'em all"
+        },
+        {
+          "time": null,
+          "text": "我带着希望回到这"
+        },
+        {
+          "time": null,
+          "text": "跑到大堤上看月色"
+        },
+        {
+          "time": null,
+          "text": "hooD story"
+        },
+        {
+          "time": null,
+          "text": "hooD story"
+        },
+        {
+          "time": null,
+          "text": "It's actually my story tho'"
+        },
+        {
+          "time": null,
+          "text": "m3"
+        }
+      ]
+    },
+    {
+      "title": "斌中往事 Where We Were",
+      "src": "media/05.mp3",
+      "duration": 207,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥"
+        },
+        {
+          "time": null,
+          "text": "在厚重的阴雨天"
+        },
+        {
+          "time": null,
+          "text": "他发呆靠在窗前"
+        },
+        {
+          "time": null,
+          "text": "下一秒偶遇的惊艳"
+        },
+        {
+          "time": null,
+          "text": "伴随着碎花裙出现"
+        },
+        {
+          "time": null,
+          "text": "在课间他只想再看一眼"
+        },
+        {
+          "time": null,
+          "text": "到面前捧着教案尽显腼腆"
+        },
+        {
+          "time": null,
+          "text": "碰着肩却担心被别人看见"
+        },
+        {
+          "time": null,
+          "text": "漫步在稻田 红了侧脸"
+        },
+        {
+          "time": null,
+          "text": "本着同事的身份"
+        },
+        {
+          "time": null,
+          "text": "赏阳台的星星"
+        },
+        {
+          "time": null,
+          "text": "此刻对视的眼睛"
+        },
+        {
+          "time": null,
+          "text": "是交织的命运"
+        },
+        {
+          "time": null,
+          "text": "穿过嘈杂人群"
+        },
+        {
+          "time": null,
+          "text": "在小桥边诉说心意"
+        },
+        {
+          "time": null,
+          "text": "闭上眼穿梭在过去和现在"
+        },
+        {
+          "time": null,
+          "text": "有些话总是来不及说明白"
+        },
+        {
+          "time": null,
+          "text": "那些往昔的梦 它就飘在空中"
+        },
+        {
+          "time": null,
+          "text": "最后依附上一层灰霾"
+        },
+        {
+          "time": null,
+          "text": "思念是看不见尽头的海"
+        },
+        {
+          "time": null,
+          "text": "让黄昏见证矢志不渝的爱"
+        },
+        {
+          "time": null,
+          "text": "曾经生花的路 门外苍老的树"
+        },
+        {
+          "time": null,
+          "text": "在朦胧中褪去色彩"
+        },
+        {
+          "time": null,
+          "text": "好久没梦见你 在你离开之后"
+        },
+        {
+          "time": null,
+          "text": "整整一十八年我还在回忆你的眼眸"
+        },
+        {
+          "time": null,
+          "text": "在你面前我蹒跚学步 敲打铁锅初展歌喉"
+        },
+        {
+          "time": null,
+          "text": "而脑海你清晰的容貌也似乎被时间带走"
+        },
+        {
+          "time": null,
+          "text": "可不能让它带走你叮咛话语"
+        },
+        {
+          "time": null,
+          "text": "如今我的想象力是你留下最珍贵的画笔"
+        },
+        {
+          "time": null,
+          "text": "不过也不能再回到教师宿舍那里"
+        },
+        {
+          "time": null,
+          "text": "长茧的双手替我扛过了多少狂风大雨"
+        },
+        {
+          "time": null,
+          "text": "似乎画面变得灰白突然乌云密布"
+        },
+        {
+          "time": null,
+          "text": "我只记得爸爸沉默不语妈妈在哭"
+        },
+        {
+          "time": null,
+          "text": "是以前我听不懂的陈述"
+        },
+        {
+          "time": null,
+          "text": "是现在走不回去那条路"
+        },
+        {
+          "time": null,
+          "text": "穿梭在过去和现在"
+        },
+        {
+          "time": null,
+          "text": "有些话总是来不及说明白"
+        },
+        {
+          "time": null,
+          "text": "那些往昔的梦 它就飘在空中"
+        },
+        {
+          "time": null,
+          "text": "最后依附上一层灰霾"
+        },
+        {
+          "time": null,
+          "text": "思念是看不见尽头的海"
+        },
+        {
+          "time": null,
+          "text": "让黄昏见证矢志不渝的爱"
+        },
+        {
+          "time": null,
+          "text": "曾经生花的路 门外苍老的树"
+        },
+        {
+          "time": null,
+          "text": "在朦胧中褪去色彩"
+        }
+      ]
+    },
+    {
+      "title": "康城之夜 Shinin'in da Dark",
+      "src": "media/06.mp3",
+      "duration": 159,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥/Wavetowait"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥/Wavetowait"
+        },
+        {
+          "time": null,
+          "text": "未经著作权人书面许可，不得以任何方式（包括翻唱、翻录等）使用"
+        },
+        {
+          "time": null,
+          "text": "『粥MADE』"
+        },
+        {
+          "time": null,
+          "text": "广州大学城的街灯像是小舞台的聚光"
+        },
+        {
+          "time": null,
+          "text": "金黄色 染上落叶潜进心里某个地方"
+        },
+        {
+          "time": null,
+          "text": "所有带着感情的思绪都先被搁置一旁"
+        },
+        {
+          "time": null,
+          "text": "迎面吹来的晚风难冷却 燃起的欲望放大"
+        },
+        {
+          "time": null,
+          "text": "他叹气着放下"
+        },
+        {
+          "time": null,
+          "text": "说没有力量的话 怎么去避免尴尬"
+        },
+        {
+          "time": null,
+          "text": "沉默在南亭小巷子出租屋的窗边"
+        },
+        {
+          "time": null,
+          "text": "每个月零散的工资难以衣着光鲜"
+        },
+        {
+          "time": null,
+          "text": "又想起 小时候西江边"
+        },
+        {
+          "time": null,
+          "text": "长满草的堤坝 承载太阳下的光圈"
+        },
+        {
+          "time": null,
+          "text": "晃眼的是他们说出口的谎言"
+        },
+        {
+          "time": null,
+          "text": "营造模糊的画面把夜晚给镶嵌"
+        },
+        {
+          "time": null,
+          "text": "那是可能一辈子都赶不上的差距"
+        },
+        {
+          "time": null,
+          "text": "违和的霓虹照映出破败的华丽"
+        },
+        {
+          "time": null,
+          "text": "麻痹了感官 脱离森林的金丝雀"
+        },
+        {
+          "time": null,
+          "text": "身披着月光掠过静谧的康城之夜"
+        },
+        {
+          "time": null,
+          "text": "康城之夜"
+        },
+        {
+          "time": null,
+          "text": "你唔知嘅"
+        },
+        {
+          "time": null,
+          "text": "迷醉到失去知觉"
+        },
+        {
+          "time": null,
+          "text": "看不见的欲念我都在逐渐理解"
+        },
+        {
+          "time": null,
+          "text": "康城之夜"
+        },
+        {
+          "time": null,
+          "text": "你唔知嘅"
+        },
+        {
+          "time": null,
+          "text": "迷醉到失去知觉"
+        },
+        {
+          "time": null,
+          "text": "隐藏起的世界我都在尝试历练"
+        },
+        {
+          "time": null,
+          "text": "rap about da street"
+        },
+        {
+          "time": null,
+          "text": "i got da fit"
+        },
+        {
+          "time": null,
+          "text": "呵护野心"
+        },
+        {
+          "time": null,
+          "text": "wt riding top"
+        },
+        {
+          "time": null,
+          "text": "我推了酒精"
+        },
+        {
+          "time": null,
+          "text": "肆虐的伤感在夜晚上露出了痕迹"
+        },
+        {
+          "time": null,
+          "text": "选择对抗打开伴奏是我的诚意"
+        },
+        {
+          "time": null,
+          "text": "我迷失在了黑夜走在欲望之间穿梭"
+        },
+        {
+          "time": null,
+          "text": "我习惯感到亏欠快乐从来不会贪多"
+        },
+        {
+          "time": null,
+          "text": "我开脱的原因总是说我颓废"
+        },
+        {
+          "time": null,
+          "text": "一拖再拖的日子从来没有回馈"
+        },
+        {
+          "time": null,
+          "text": "i ma falling in da 康城之夜"
+        },
+        {
+          "time": null,
+          "text": "路灯残存光亮直接将我撕扯"
+        },
+        {
+          "time": null,
+          "text": "还是缺乏自信现实没人施舍"
+        },
+        {
+          "time": null,
+          "text": "but i not the young one 宜家到我书写"
+        },
+        {
+          "time": null,
+          "text": "writing wait to wave it told me should be patient"
+        },
+        {
+          "time": null,
+          "text": "我知道未够努力仲眉可以奢望talent"
+        },
+        {
+          "time": null,
+          "text": "执翻好件衫 仲有下座山要攀"
+        },
+        {
+          "time": null,
+          "text": "叠埋心水 我地在终点劈弯"
+        },
+        {
+          "time": null,
+          "text": "康城之夜"
+        },
+        {
+          "time": null,
+          "text": "你唔知嘅"
+        },
+        {
+          "time": null,
+          "text": "迷醉到失去知觉"
+        },
+        {
+          "time": null,
+          "text": "看不见的欲念我都在逐渐理解"
+        },
+        {
+          "time": null,
+          "text": "康城之夜"
+        },
+        {
+          "time": null,
+          "text": "你唔知嘅"
+        },
+        {
+          "time": null,
+          "text": "迷醉到失去知觉"
+        },
+        {
+          "time": null,
+          "text": "隐藏起的世界我都在尝试历练"
+        },
+        {
+          "time": null,
+          "text": "[旅客朋友]"
+        },
+        {
+          "time": null,
+          "text": "[为确保动车组列车行车安全]"
+        },
+        {
+          "time": null,
+          "text": "[动车组列车全列禁烟]"
+        }
+      ]
+    },
+    {
+      "title": "南江口站 skit",
+      "src": "media/07.mp3",
+      "duration": 86,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥"
+        },
+        {
+          "time": null,
+          "text": "未经著作权人书面许可，不得以任何方式(包括翻唱、翻录等)使用"
+        },
+        {
+          "time": null,
+          "text": "[请旅客们不要再任何区域内吸烟]"
+        },
+        {
+          "time": null,
+          "text": "[也不要再卫生间内使用香水、防晒喷雾、发胶等……]"
+        },
+        {
+          "time": null,
+          "text": "粥：你这说得好像你不是看着我长大一样"
+        },
+        {
+          "time": null,
+          "text": "粥妈妈：我是很久没见过你写毛笔字了"
+        },
+        {
+          "time": null,
+          "text": "粥妈妈：是真的写了吗"
+        },
+        {
+          "time": null,
+          "text": "粥：你没看到韶关那集吗"
+        },
+        {
+          "time": null,
+          "text": "粥：是我写的"
+        },
+        {
+          "time": null,
+          "text": "粥妈妈：是你默写《长征》赢了吗"
+        },
+        {
+          "time": null,
+          "text": "粥：没赢呢，那集是我们输了的"
+        },
+        {
+          "time": null,
+          "text": "粥妈妈：噢，龙眼那集你就赢了是吧"
+        },
+        {
+          "time": null,
+          "text": "（未知时间间隔）"
+        },
+        {
+          "time": null,
+          "text": "粥妈妈：儿子，我看有的专业的国家线分数比你考得要低"
+        },
+        {
+          "time": null,
+          "text": "粥妈妈：不能调剂去那些专业吗"
+        },
+        {
+          "time": null,
+          "text": "粥：不是这样调剂的"
+        },
+        {
+          "time": null,
+          "text": "粥：考的科目都不一样怎么能这样调剂呢"
+        },
+        {
+          "time": null,
+          "text": "粥：艺术类考研的国家线是361分"
+        },
+        {
+          "time": null,
+          "text": "粥：我才考了312分"
+        },
+        {
+          "time": null,
+          "text": "粥妈妈：噢，也就是说艺术类只能调剂艺术类的吗"
+        },
+        {
+          "time": null,
+          "text": "粥妈妈：原来是这样的"
+        },
+        {
+          "time": null,
+          "text": "粥妈妈：行吧，这样的话，你自己想好做什么工作就做什么吧"
+        }
+      ]
+    },
+    {
+      "title": "省城 interlude",
+      "src": "media/08.mp3",
+      "duration": 130,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥"
+        },
+        {
+          "time": null,
+          "text": "未经著作权人书面许可，不得以任何方式(包括翻唱、翻录等)使用"
+        },
+        {
+          "time": null,
+          "text": "自细生活係德庆"
+        },
+        {
+          "time": null,
+          "text": "只觉得省城好远好远"
+        },
+        {
+          "time": null,
+          "text": "若唔系个次考试失利"
+        },
+        {
+          "time": null,
+          "text": "背井离乡都唔会成为首选"
+        },
+        {
+          "time": null,
+          "text": "夕阳投入课室嘅光线"
+        },
+        {
+          "time": null,
+          "text": "眨眼三年好似发梦"
+        },
+        {
+          "time": null,
+          "text": "滴落嘅泪水 堆积 倒映"
+        },
+        {
+          "time": null,
+          "text": "广州 天河南 城市霓虹"
+        },
+        {
+          "time": null,
+          "text": "屋企打来电话我话我嘅成绩从来未令你担心过"
+        },
+        {
+          "time": null,
+          "text": "佢话都要脚踏实地为工作准备最好某玩音乐"
+        },
+        {
+          "time": null,
+          "text": "几多次挫败係唔对等嘅热情"
+        },
+        {
+          "time": null,
+          "text": "重现係我面前 珠江水已见证"
+        },
+        {
+          "time": null,
+          "text": "以为我明明已剖析出原形"
+        },
+        {
+          "time": null,
+          "text": "最后先发现我错得完全"
+        },
+        {
+          "time": null,
+          "text": "一次次嘅往返 我早已失去知觉"
+        },
+        {
+          "time": null,
+          "text": "人情世故 暗示嘅细节"
+        },
+        {
+          "time": null,
+          "text": "换作係以前 我仲会去思索"
+        },
+        {
+          "time": null,
+          "text": "繁华嘅都市 涌动嘅人潮"
+        },
+        {
+          "time": null,
+          "text": "杂乱嘅思绪 噏耷嘅居住地"
+        },
+        {
+          "time": null,
+          "text": "一幅美丽又恐怖嘅画卷 你睇完未"
+        },
+        {
+          "time": null,
+          "text": "小船随江流漂泊"
+        },
+        {
+          "time": null,
+          "text": "浮沉避不开争夺"
+        },
+        {
+          "time": null,
+          "text": "只不过褪掉一身傲气"
+        },
+        {
+          "time": null,
+          "text": "再度回归到沉默"
+        },
+        {
+          "time": null,
+          "text": "孤舟一直在漂泊"
+        },
+        {
+          "time": null,
+          "text": "望危楼刺穿星河"
+        },
+        {
+          "time": null,
+          "text": "游走过百越蛮国"
+        },
+        {
+          "time": null,
+          "text": "人间遍地野火"
+        },
+        {
+          "time": null,
+          "text": "小船随江流漂泊"
+        },
+        {
+          "time": null,
+          "text": "浮沉避不开争夺"
+        },
+        {
+          "time": null,
+          "text": "只不过褪掉一身傲气"
+        },
+        {
+          "time": null,
+          "text": "再度回归到沉默"
+        },
+        {
+          "time": null,
+          "text": "孤舟一直在漂泊"
+        },
+        {
+          "time": null,
+          "text": "望危楼刺穿星河"
+        },
+        {
+          "time": null,
+          "text": "游走过百越蛮国"
+        },
+        {
+          "time": null,
+          "text": "人间遍地野火"
+        }
+      ]
+    },
+    {
+      "title": "城中村 Urban Ghetto",
+      "src": "media/09.mp3",
+      "duration": 208,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥/Wavetowait"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥/Wavetowait"
+        },
+        {
+          "time": null,
+          "text": "未经著作权人书面许可 不得以任何方式(包括翻唱、翻录等)使用"
+        },
+        {
+          "time": null,
+          "text": "where we living"
+        },
+        {
+          "time": null,
+          "text": "辗转反侧揿着手机时间经已两点"
+        },
+        {
+          "time": null,
+          "text": "似乎宜家我唔应该再去谂到你"
+        },
+        {
+          "time": null,
+          "text": "经常翻看以前我地一齐影嘅相片"
+        },
+        {
+          "time": null,
+          "text": "空调定时关机呼吸焗热嘅空气"
+        },
+        {
+          "time": null,
+          "text": "捱紧杯面训係城中村"
+        },
+        {
+          "time": null,
+          "text": "水渠冤臭经过城中村"
+        },
+        {
+          "time": null,
+          "text": "朝九晚九翻到城中村"
+        },
+        {
+          "time": null,
+          "text": "都想有日会走出城中村"
+        },
+        {
+          "time": null,
+          "text": "圈"
+        },
+        {
+          "time": null,
+          "text": "阳台洗衫晒衫"
+        },
+        {
+          "time": null,
+          "text": "楼下落班上班"
+        },
+        {
+          "time": null,
+          "text": "地铁转三个弯"
+        },
+        {
+          "time": null,
+          "text": "求其食个早餐晚餐"
+        },
+        {
+          "time": null,
+          "text": "向社会上山"
+        },
+        {
+          "time": null,
+          "text": "半山个位置"
+        },
+        {
+          "time": null,
+          "text": "计翻谂翻"
+        },
+        {
+          "time": null,
+          "text": "始终抵唔翻条数"
+        },
+        {
+          "time": null,
+          "text": "我但求过关简单"
+        },
+        {
+          "time": null,
+          "text": "周围无开7仔落去蔚然锦和买嘢饮"
+        },
+        {
+          "time": null,
+          "text": "村口嘅啊叔啊婶 街头巷角执废品"
+        },
+        {
+          "time": null,
+          "text": "打工仔搏命去揾为提高生活水准"
+        },
+        {
+          "time": null,
+          "text": "大家差唔多咁憔悴 又咪一样要忍"
+        },
+        {
+          "time": null,
+          "text": "戴係颈嘅蓝色工牌几时可以换成金链"
+        },
+        {
+          "time": null,
+          "text": "点去保持真诚 难以捉摸深浅"
+        },
+        {
+          "time": null,
+          "text": "屋企人嗌早啲买楼 我话熬过今年"
+        },
+        {
+          "time": null,
+          "text": "怎敢孕育新生命 我双手未够温暖"
+        },
+        {
+          "time": null,
+          "text": "辗转反侧揿着手机时间经已两点"
+        },
+        {
+          "time": null,
+          "text": "似乎宜家我唔应该再去谂到你"
+        },
+        {
+          "time": null,
+          "text": "经常翻看以前我地一齐影嘅相片"
+        },
+        {
+          "time": null,
+          "text": "空调定时关机呼吸焗热嘅空气"
+        },
+        {
+          "time": null,
+          "text": "捱紧杯面训係城中村"
+        },
+        {
+          "time": null,
+          "text": "水渠冤臭经过城中村"
+        },
+        {
+          "time": null,
+          "text": "朝九晚九翻到城中村"
+        },
+        {
+          "time": null,
+          "text": "都想有日会走出城中村"
+        },
+        {
+          "time": null,
+          "text": "圈"
+        },
+        {
+          "time": null,
+          "text": "We riding dirt"
+        },
+        {
+          "time": null,
+          "text": "别管我们来自哪儿"
+        },
+        {
+          "time": null,
+          "text": "4 peoples 在小房间 make it fire"
+        },
+        {
+          "time": null,
+          "text": "Cooking hot shit 音乐塔顶亮剑"
+        },
+        {
+          "time": null,
+          "text": "10平米的单间我们在生活上苟且"
+        },
+        {
+          "time": null,
+          "text": "地板上面过夜从没感觉冷"
+        },
+        {
+          "time": null,
+          "text": "站上舞台靠的不是一个人"
+        },
+        {
+          "time": null,
+          "text": "城中村他见证我的恨"
+        },
+        {
+          "time": null,
+          "text": "I ma keepin' going 聚焦下一次射门"
+        },
+        {
+          "time": null,
+          "text": "戒断反应 欲望的感觉我不再去相信"
+        },
+        {
+          "time": null,
+          "text": "脚踏实地balling等待我的绝地反击"
+        },
+        {
+          "time": null,
+          "text": "我想要变成emo god很难做到满意"
+        },
+        {
+          "time": null,
+          "text": "歌词里塞满虚假内心已在攀比"
+        },
+        {
+          "time": null,
+          "text": "平静的湖面些许涟漪逐渐泛起"
+        },
+        {
+          "time": null,
+          "text": "我知道那些苦痛只是我的成功断句"
+        },
+        {
+          "time": null,
+          "text": "做好准备出现在下一场颁奖典礼"
+        },
+        {
+          "time": null,
+          "text": "Wait to wave我的名字最后变成传奇"
+        },
+        {
+          "time": null,
+          "text": "辗转反侧揿着手机时间经已两点"
+        },
+        {
+          "time": null,
+          "text": "似乎宜家我唔应该再去谂到你"
+        },
+        {
+          "time": null,
+          "text": "经常翻看以前我地一齐影嘅相片"
+        },
+        {
+          "time": null,
+          "text": "空调定时关机呼吸焗热嘅空气"
+        },
+        {
+          "time": null,
+          "text": "捱紧杯面训係城中村"
+        },
+        {
+          "time": null,
+          "text": "水渠冤臭经过城中村"
+        },
+        {
+          "time": null,
+          "text": "朝九晚九翻到城中村"
+        },
+        {
+          "time": null,
+          "text": "都想有日"
+        },
+        {
+          "time": null,
+          "text": "我同我班兄弟係城中村"
+        },
+        {
+          "time": null,
+          "text": "日夜做歌都係城中村"
+        },
+        {
+          "time": null,
+          "text": "穷困潦倒生存城中村"
+        },
+        {
+          "time": null,
+          "text": "绝地反击都係城中村"
+        },
+        {
+          "time": null,
+          "text": "我同我班兄弟係城中村"
+        },
+        {
+          "time": null,
+          "text": "日夜做歌都係城中村"
+        },
+        {
+          "time": null,
+          "text": "穷困潦倒生存城中村"
+        },
+        {
+          "time": null,
+          "text": "当我走起来都係"
+        }
+      ]
+    },
+    {
+      "title": "就咁 Luv Ova Sex",
+      "src": "media/10.mp3",
+      "duration": 169,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥"
+        },
+        {
+          "time": null,
+          "text": "未经著作权人书面许可，不得以任何方式（包括翻唱、翻录等）使用"
+        },
+        {
+          "time": null,
+          "text": "让我喘口气 陷入了雾里只想找到你"
+        },
+        {
+          "time": null,
+          "text": "缘分似藕丝 曾经嘅个支香水去咗边"
+        },
+        {
+          "time": null,
+          "text": "以为天亮了 就能解决掉问题"
+        },
+        {
+          "time": null,
+          "text": "耳鬓厮磨的细语 时间过了就失去意义"
+        },
+        {
+          "time": null,
+          "text": "其实我看到了你的小动作只是我不去戳穿"
+        },
+        {
+          "time": null,
+          "text": "一人一个版本的故事就把你写成诡计多端"
+        },
+        {
+          "time": null,
+          "text": "still love over sex bitch我会忘记个晚"
+        },
+        {
+          "time": null,
+          "text": "劝你别再反复试探 你不值得我把话说完"
+        },
+        {
+          "time": null,
+          "text": "还想留个纪念"
+        },
+        {
+          "time": null,
+          "text": "这么恶心不如去骗三年前的我"
+        },
+        {
+          "time": null,
+          "text": "不是林俊杰不跟你扯可惜没如果"
+        },
+        {
+          "time": null,
+          "text": "以后就把你我年龄差当成分开的理由"
+        },
+        {
+          "time": null,
+          "text": "过去当是看了场电影"
+        },
+        {
+          "time": null,
+          "text": "落幕漫步在城市夜雨"
+        },
+        {
+          "time": null,
+          "text": "拔掉心锚在时间线里"
+        },
+        {
+          "time": null,
+          "text": "没有涟漪但水花溅起沾湿我"
+        },
+        {
+          "time": null,
+          "text": "或许从没看穿你"
+        },
+        {
+          "time": null,
+          "text": "即使负数的距离"
+        },
+        {
+          "time": null,
+          "text": "you thought I'm a f^kboy"
+        },
+        {
+          "time": null,
+          "text": "but I'm the one who make you bleed"
+        },
+        {
+          "time": null,
+          "text": "每次追寻回忆总是看不清"
+        },
+        {
+          "time": null,
+          "text": "让我梦魇缠身也碰不到你的心"
+        },
+        {
+          "time": null,
+          "text": "月下赤诚的拥吻换来以后的阴影"
+        },
+        {
+          "time": null,
+          "text": "叹息关上房门熄掉你来电的荧屏"
+        },
+        {
+          "time": null,
+          "text": "每次追忆化作枕头里的针"
+        },
+        {
+          "time": null,
+          "text": "令我辗转反侧亦都刺透你的心"
+        },
+        {
+          "time": null,
+          "text": "我唔想再与你失去温度地亲吻"
+        },
+        {
+          "time": null,
+          "text": "点解接通电话我又期待你声音"
+        },
+        {
+          "time": null,
+          "text": "why u left baby i aint stalking i just want that conversation"
+        },
+        {
+          "time": null,
+          "text": "we were on the same track so why u keep me far away then"
+        },
+        {
+          "time": null,
+          "text": "feel so lost ，maybe that was a wrong timing for my statement"
+        },
+        {
+          "time": null,
+          "text": "sex is so amazing"
+        },
+        {
+          "time": null,
+          "text": "f^k black f^k white I aint discriminating"
+        },
+        {
+          "time": null,
+          "text": "记得一整夜 我的舌头没离开过你身体"
+        },
+        {
+          "time": null,
+          "text": "等关系冷却 回归孤独是我没想过的问题"
+        },
+        {
+          "time": null,
+          "text": "你跟多少人分享了心事 留下同样的痕迹"
+        },
+        {
+          "time": null,
+          "text": "我只是觉得爱到这程度 没有必要去分析"
+        },
+        {
+          "time": null,
+          "text": "That's a long distance"
+        },
+        {
+          "time": null,
+          "text": "即使你就係我面前"
+        },
+        {
+          "time": null,
+          "text": "Ain't gon make no difference"
+        },
+        {
+          "time": null,
+          "text": "我嘅心意从未变迁"
+        },
+        {
+          "time": null,
+          "text": "再遇谁都难着火"
+        },
+        {
+          "time": null,
+          "text": "已经为你心上锁"
+        },
+        {
+          "time": null,
+          "text": "信件作咗 几多 比我 听到你耳机度放我歌"
+        },
+        {
+          "time": null,
+          "text": "我的歌变成你枕头里的针"
+        },
+        {
+          "time": null,
+          "text": "刺穿曾经缠绵的时分"
+        },
+        {
+          "time": null,
+          "text": "带上了你离开那道门"
+        },
+        {
+          "time": null,
+          "text": "难免垂头丧气"
+        },
+        {
+          "time": null,
+          "text": "只是我太想你"
+        },
+        {
+          "time": null,
+          "text": "又不舍得忘记"
+        },
+        {
+          "time": null,
+          "text": "每次追忆化作枕头里的针"
+        },
+        {
+          "time": null,
+          "text": "令我辗转反侧亦都刺透你的心"
+        },
+        {
+          "time": null,
+          "text": "我唔想再与你失去温度的亲吻"
+        },
+        {
+          "time": null,
+          "text": "点解接通电话我又期待你声音"
+        },
+        {
+          "time": null,
+          "text": "每次追忆化作枕头里的针"
+        },
+        {
+          "time": null,
+          "text": "令我辗转反侧亦都刺透你的心"
+        },
+        {
+          "time": null,
+          "text": "我唔想再与你失去温度的亲吻"
+        },
+        {
+          "time": null,
+          "text": "点解接通电话我又期待你声音"
+        }
+      ]
+    },
+    {
+      "title": "钢筋丛林 Food Chain",
+      "src": "media/11.mp3",
+      "duration": 199,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥"
+        },
+        {
+          "time": null,
+          "text": "未经著作权人书面许可 不得以任何方式(包括翻唱、翻录等)使用"
+        },
+        {
+          "time": null,
+          "text": "[采样来自:仙剑奇侠传五前传]"
+        },
+        {
+          "time": null,
+          "text": "谢沧行:剑者 心之刃也"
+        },
+        {
+          "time": null,
+          "text": "谢沧行:既可为杀 亦可为护"
+        },
+        {
+          "time": null,
+          "text": "谢沧行:杀与护 不过一念之间"
+        },
+        {
+          "time": null,
+          "text": "谢沧行:你的魂 我收下了！"
+        },
+        {
+          "time": null,
+          "text": "逃离"
+        },
+        {
+          "time": null,
+          "text": "我无法穿过钢筋水泥中找到你"
+        },
+        {
+          "time": null,
+          "text": "玻璃在高楼上反映行尸走肉的倒影"
+        },
+        {
+          "time": null,
+          "text": "资本的毒性早扩散进脑里"
+        },
+        {
+          "time": null,
+          "text": "抬头看血月悬挂市中心"
+        },
+        {
+          "time": null,
+          "text": "用钞票蒙在眼前装睡的人叫不醒"
+        },
+        {
+          "time": null,
+          "text": "有人横死街头有人道路被铺平"
+        },
+        {
+          "time": null,
+          "text": "面面相觑 他们心里有治不好的病"
+        },
+        {
+          "time": null,
+          "text": "或许溺亡在人海是我们的宿命"
+        },
+        {
+          "time": null,
+          "text": "宿命"
+        },
+        {
+          "time": null,
+          "text": "听"
+        },
+        {
+          "time": null,
+          "text": "这片丛林吞没了求救的声音"
+        },
+        {
+          "time": null,
+          "text": "当天边慢慢筑起云雾的围墙"
+        },
+        {
+          "time": null,
+          "text": "列车上的乘客只剩纯粹的欲望"
+        },
+        {
+          "time": null,
+          "text": "定义陷阱把他们分开一人一方"
+        },
+        {
+          "time": null,
+          "text": "盆满钵满的在哂笑雕像将被遗忘"
+        },
+        {
+          "time": null,
+          "text": "不断地制造假象"
+        },
+        {
+          "time": null,
+          "text": "漫山遍野的塑料在替代盛开的花"
+        },
+        {
+          "time": null,
+          "text": "没人敢改变现状"
+        },
+        {
+          "time": null,
+          "text": "但是都打开了窗安静等待雨落下"
+        },
+        {
+          "time": null,
+          "text": "他们在用人解剖"
+        },
+        {
+          "time": null,
+          "text": "血肉 困兽"
+        },
+        {
+          "time": null,
+          "text": "如果到最后也失去出口"
+        },
+        {
+          "time": null,
+          "text": "我会抱着你到时间尽头"
+        },
+        {
+          "time": null,
+          "text": "我们漂泊在这孤舟"
+        },
+        {
+          "time": null,
+          "text": "这片高楼已被诅咒"
+        },
+        {
+          "time": null,
+          "text": "沉默"
+        },
+        {
+          "time": null,
+          "text": "原来是相位抵消的嘶吼"
+        },
+        {
+          "time": null,
+          "text": "逃离"
+        },
+        {
+          "time": null,
+          "text": "我无法穿过钢筋水泥中找到你"
+        },
+        {
+          "time": null,
+          "text": "玻璃在高楼上反映行尸走肉的倒影"
+        },
+        {
+          "time": null,
+          "text": "资本的毒性早扩散进脑里"
+        },
+        {
+          "time": null,
+          "text": "抬头看血月悬挂市中心"
+        },
+        {
+          "time": null,
+          "text": "用钞票蒙在眼前装睡的人叫不醒"
+        },
+        {
+          "time": null,
+          "text": "有人横死街头有人道路被铺平"
+        },
+        {
+          "time": null,
+          "text": "面面相觑 他们心里有治不好的病"
+        },
+        {
+          "time": null,
+          "text": "或许溺亡在人海是我们的宿命"
+        },
+        {
+          "time": null,
+          "text": "宿命"
+        },
+        {
+          "time": null,
+          "text": "听"
+        },
+        {
+          "time": null,
+          "text": "这片丛林吞没了求救的声音"
+        },
+        {
+          "time": null,
+          "text": "逃离"
+        },
+        {
+          "time": null,
+          "text": "找寻"
+        },
+        {
+          "time": null,
+          "text": "倒影"
+        },
+        {
+          "time": null,
+          "text": "老去"
+        }
+      ]
+    },
+    {
+      "title": "伶仃洋 outro",
+      "src": "media/12.mp3",
+      "duration": 161,
+      "lyrics": [
+        {
+          "time": null,
+          "text": "作词 : 粥"
+        },
+        {
+          "time": null,
+          "text": "作曲 : 粥"
+        },
+        {
+          "time": null,
+          "text": "未经著作权人书面许可，不得以任何方式（包括翻唱、翻录等）使用"
+        },
+        {
+          "time": null,
+          "text": "穿过了钢筑的丛林"
+        },
+        {
+          "time": null,
+          "text": "乘小船一直都顺流漂"
+        },
+        {
+          "time": null,
+          "text": "想象着海外的奇遇"
+        },
+        {
+          "time": null,
+          "text": "眼前是坚定的方向"
+        },
+        {
+          "time": null,
+          "text": "或许会到异国他乡"
+        },
+        {
+          "time": null,
+          "text": "财富和自由都等得到"
+        },
+        {
+          "time": null,
+          "text": "或许会流落荒岛"
+        },
+        {
+          "time": null,
+          "text": "发展我自己的领土"
+        },
+        {
+          "time": null,
+          "text": "可是夕阳光慢慢落下地平线"
+        },
+        {
+          "time": null,
+          "text": "像个不能再寻常的夜晚"
+        },
+        {
+          "time": null,
+          "text": "却不能寐 泊在港口的渔船"
+        },
+        {
+          "time": null,
+          "text": "吹着凉风站在对面的水手说"
+        },
+        {
+          "time": null,
+          "text": "还不是一样的枯燥"
+        },
+        {
+          "time": null,
+          "text": "陆上鸟至少还能飞上树梢"
+        },
+        {
+          "time": null,
+          "text": "说将来的日子不轻松"
+        },
+        {
+          "time": null,
+          "text": "但我害怕醒来还是一样的平庸"
+        },
+        {
+          "time": null,
+          "text": "走出天后宫的山门 思绪被风带走"
+        },
+        {
+          "time": null,
+          "text": "海平面上的轮廓都变得无影踪"
+        },
+        {
+          "time": null,
+          "text": "涌动暗流和波涛 祖辈的身影走过"
+        },
+        {
+          "time": null,
+          "text": "山河破碎 浮沉于熊熊战火"
+        },
+        {
+          "time": null,
+          "text": "远方传不来归家的声音"
+        },
+        {
+          "time": null,
+          "text": "浪潮敲打舷板从未停息"
+        },
+        {
+          "time": null,
+          "text": "是谁等待海鸟衔来回信"
+        },
+        {
+          "time": null,
+          "text": "盼天明"
+        },
+        {
+          "time": null,
+          "text": "盼天明 无尽的黑暗中盼天明"
+        },
+        {
+          "time": null,
+          "text": "日复一日重复的场景只能靠自己坚信"
+        },
+        {
+          "time": null,
+          "text": "坚信明天就会有太阳"
+        },
+        {
+          "time": null,
+          "text": "家乡的歌他还在唱"
+        },
+        {
+          "time": null,
+          "text": "只有骗自己活下去才能够对抗这凶猛的海浪"
+        },
+        {
+          "time": null,
+          "text": "刺进内心的刀伤就像藤壶不能被冲刷"
+        },
+        {
+          "time": null,
+          "text": "稍有不慎就会被身边麻木的人给同化"
+        },
+        {
+          "time": null,
+          "text": "现实与想象的落差每一次想起就像被轰炸"
+        },
+        {
+          "time": null,
+          "text": "站在甲板上咆哮"
+        },
+        {
+          "time": null,
+          "text": "恍惚中看见一头巨兽出没在归墟"
+        },
+        {
+          "time": null,
+          "text": "激起了海啸化作鹏鸟向黑云飞去"
+        },
+        {
+          "time": null,
+          "text": "清气从天而降荡净环绕海面的阴霾"
+        },
+        {
+          "time": null,
+          "text": "摸到结实的地面原来我又从噩梦中醒来"
+        },
+        {
+          "time": null,
+          "text": "走出天后宫的山门 思绪被风带走"
+        },
+        {
+          "time": null,
+          "text": "海平面上的轮廓都变得无影踪"
+        },
+        {
+          "time": null,
+          "text": "涌动暗流和波涛 祖辈的身影走过"
+        },
+        {
+          "time": null,
+          "text": "山河破碎 浮沉于熊熊战火"
+        },
+        {
+          "time": null,
+          "text": "远方传不来归家的声音"
+        },
+        {
+          "time": null,
+          "text": "浪潮敲打舷板从未停息"
+        },
+        {
+          "time": null,
+          "text": "是谁等待海鸟衔来回信"
+        },
+        {
+          "time": null,
+          "text": "盼天明"
+        },
+        {
+          "time": null,
+          "text": "（海水声）"
+        }
+      ]
+    },
+    {
+      "title": "Bonus Track 1",
+      "src": "media/13.mp3",
+      "duration": 125,
+      "lyrics": []
+    },
+    {
+      "title": "Bonus Track 2",
+      "src": "media/14.mp3",
+      "duration": 42,
+      "lyrics": []
+    },
+    {
+      "title": "Bonus Track 3",
+      "src": "media/15.mp3",
+      "duration": 147,
+      "lyrics": []
+    }
+  ]
+}
