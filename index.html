@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10151b">
+  <meta name="description" content="一张专辑，一次完整聆听。">
+  <title>我的专辑 · 在线聆听</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">◖</span><span>DAKHING</span></a>
+      <button id="manage-button" class="text-button" type="button">管理专辑 <span aria-hidden="true">↗</span></button>
+    </header>
+
+    <main id="top">
+      <section class="album-layout" aria-label="专辑播放器">
+        <div class="art-column">
+          <div id="cover-frame" class="cover-frame">
+            <div id="cover-placeholder" class="cover-placeholder" aria-label="专辑封面占位图">
+              <div class="cover-orbit orbit-one"></div><div class="cover-orbit orbit-two"></div>
+              <span class="cover-glyph">◖</span>
+              <span class="cover-caption">ECHO RECORDS · VOL. 01</span>
+            </div>
+            <img id="cover-image" alt="" hidden>
+          </div>
+          <div class="cover-note"><span>ALBUM PLAYER</span><span id="track-count">00 TRACKS</span></div>
+        </div>
+
+        <div class="content-column">
+          <div class="eyebrow"><span class="eyebrow-line"></span> NOW PLAYING / 正在播放</div>
+          <h1 id="album-title">我的专辑</h1>
+          <p id="artist-name" class="artist">上传你的音乐，让故事从这里开始。</p>
+          <p id="album-description" class="description">按顺序聆听整张专辑，或从下方曲目中挑选喜欢的一首。</p>
+
+          <div class="player-card">
+            <div class="playing-info"><div><span class="small-label">CURRENT TRACK</span><strong id="current-title">等待第一首歌</strong></div><span id="current-index" class="track-fraction">00 / 00</span></div>
+            <div class="seek-row"><span id="elapsed">0:00</span><input id="seek" type="range" min="0" max="1000" value="0" aria-label="播放进度" disabled><span id="duration">0:00</span></div>
+            <div class="player-controls">
+              <button id="prev-button" class="icon-button" type="button" aria-label="上一首" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5v14M18 5 8 12l10 7V5Z"/></svg></button>
+              <button id="play-button" class="play-button" type="button" aria-label="播放" disabled><svg id="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"/></svg></button>
+              <button id="next-button" class="icon-button" type="button" aria-label="下一首" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5v14M6 5l10 7-10 7V5Z"/></svg></button>
+              <div class="volume"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12-1a6 6 0 0 1 0 8m2-11a10 10 0 0 1 0 14"/></svg><input id="volume" type="range" min="0" max="100" value="80" aria-label="音量"></div>
+            </div>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="内容"><button id="tracks-tab" class="tab active" role="tab" aria-selected="true" aria-controls="tracks-panel">曲目列表 <span id="tab-count">00</span></button><button id="lyrics-tab" class="tab" role="tab" aria-selected="false" aria-controls="lyrics-panel">歌词</button></div>
+          <div id="tracks-panel" role="tabpanel" aria-labelledby="tracks-tab"><ol id="track-list" class="track-list"></ol><div id="empty-tracks" class="empty-state">专辑尚未上传。站主可点击右上角「管理专辑」添加歌曲。</div></div>
+          <div id="lyrics-panel" role="tabpanel" aria-labelledby="lyrics-tab" hidden><div id="lyrics" class="lyrics empty-state">播放歌曲后，歌词会显示在这里。</div></div>
+        </div>
+      </section>
+    </main>
+    <footer><span>得㷫 DAKHING / 粥</span><span>用心听完每一首</span></footer>
+  </div>
+
+  <dialog id="manage-dialog" aria-labelledby="manage-title">
+    <form id="upload-form" class="manage-form">
+      <div class="dialog-head"><div><span class="small-label">ALBUM STUDIO</span><h2 id="manage-title">管理专辑</h2></div><button id="close-dialog" class="close-button" type="button" aria-label="关闭">×</button></div>
+      <p class="dialog-intro">选择整张专辑的歌曲并排好顺序。上传会提交到你的 GitHub 仓库，几分钟后网站自动更新。</p>
+      <div class="form-grid"><label>专辑名称<input name="albumTitle" required maxlength="80" placeholder="例如：夜航"></label><label>艺人名称<input name="artist" required maxlength="80" placeholder="例如：你的名字"></label></div>
+      <label>专辑简介<textarea name="description" rows="2" maxlength="260" placeholder="关于这张专辑的一句话"></textarea></label>
+      <label>封面图片 <span class="hint">JPG、PNG、WebP，建议正方形</span><input id="cover-file" type="file" accept="image/jpeg,image/png,image/webp"></label>
+      <label>歌曲文件 <span class="hint">MP3、M4A、OGG、WAV；按下方按钮调整播放顺序</span><input id="audio-files" type="file" accept="audio/*,.mp3,.m4a,.ogg,.wav,.flac" multiple></label>
+      <ol id="upload-track-list" class="upload-track-list"></ol>
+      <label>歌词文件 <span class="hint">可选，上传与歌曲同名的 .lrc 或 .txt 文件</span><input id="lyric-files" type="file" accept=".lrc,.txt,text/plain" multiple></label>
+      <div class="form-divider"></div>
+      <p class="repo-help">只需站主填写。令牌仅在当前页面内存中使用，刷新后清除；请创建仅对本仓库有 <strong>Contents: Read and write</strong> 权限的 GitHub fine-grained token。</p>
+      <div class="form-grid"><label>GitHub 用户名<input name="owner" required autocomplete="off" placeholder="your-name"></label><label>仓库名<input name="repo" required autocomplete="off" placeholder="my-album"></label></div>
+      <label>GitHub 访问令牌<input name="token" type="password" required autocomplete="off" placeholder="github_pat_..."></label>
+      <p id="upload-status" class="upload-status" role="status" aria-live="polite"></p>
+      <button id="submit-upload" class="submit-button" type="submit">上传并发布专辑 <span>↗</span></button>
+    </form>
+  </dialog>
+  <audio id="audio" preload="metadata"></audio>
+</body>
+</html>
