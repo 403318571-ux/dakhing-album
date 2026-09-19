@@ -8,7 +8,7 @@
   <title>我的专辑 · 在线聆听</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <script src="app.js?v=crossfade-1" defer></script>
 </head>
 <body>
   <div class="site-shell">
@@ -75,6 +75,7 @@
       <button id="submit-upload" class="submit-button" type="submit">上传并发布专辑 <span>↗</span></button>
     </form>
   </dialog>
-  <audio id="audio" preload="metadata"></audio>
+  <audio id="audio" preload="auto"></audio>
+  <audio id="audio-next" preload="auto"></audio>
 </body>
 </html>
