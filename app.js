@@ -164,7 +164,25 @@ function showAlbum(album) {
   $('next-button').disabled = album.tracks.length === 0;
   $('prev-button').disabled = album.tracks.length === 0;
   renderTracks();
-  if (album.tracks.length) selectTrack(0, false);
+  if (album.tracks.length) {
+    const requestedSong = new URLSearchParams(location.search).get('song');
+    const requestedIndex = album.tracks.findIndex((track, index) => AlbumShare.slugFor(track, index) === requestedSong);
+    selectTrack(requestedIndex >= 0 ? requestedIndex : 0, false);
+  }
+}
+
+function shareUrl(track, index) {
+  return new URL(AlbumShare.pathFor(track, index), location.href).href;
+}
+
+function openShareDialog(track, index) {
+  const url = shareUrl(track, index);
+  $('share-cover').src = state.album.cover || 'favicon.svg';
+  $('share-title').textContent = track.title;
+  $('share-url').value = url;
+  $('open-share').href = url;
+  $('share-status').textContent = '';
+  $('share-dialog').showModal();
 }
 
 function renderTracks() {
@@ -179,7 +197,13 @@ function renderTracks() {
     const duration = document.createElement('span'); duration.className = 'track-duration'; duration.textContent = track.duration ? fmt(track.duration) : '—';
     button.append(number, name, duration);
     button.addEventListener('click', () => selectTrack(index, true));
-    li.append(button);
+    const share = document.createElement('button');
+    share.type = 'button';
+    share.className = 'track-share';
+    share.textContent = '分享';
+    share.setAttribute('aria-label', `分享第 ${index + 1} 首：${track.title}`);
+    share.addEventListener('click', () => openShareDialog(track, index));
+    li.append(button, share);
     return li;
   }));
 }
@@ -321,6 +345,23 @@ async function uploadFile(apiBase, branch, token, file, path, label) {
   return path;
 }
 
+async function uploadSharePage(apiBase, branch, token, album, track, index, siteUrl) {
+  const path = AlbumShare.pathFor(track, index);
+  let sha;
+  try { sha = (await githubRequest(`${apiBase}/contents/${path}?ref=${encodeURIComponent(branch)}`, token)).sha; }
+  catch (error) { if (!/404|Not Found/.test(error.message)) throw error; }
+  const html = AlbumShare.pageHtml(album, track, index, siteUrl);
+  await githubRequest(`${apiBase}/contents/${path}`, token, {
+    method: 'PUT',
+    body: JSON.stringify({
+      message: `Publish song page: ${track.title}`,
+      content: btoa(unescape(encodeURIComponent(html))),
+      branch,
+      ...(sha ? { sha } : {})
+    })
+  });
+}
+
 async function submitAlbum(event) {
   event.preventDefault();
   if (state.busy) return;
@@ -367,6 +408,11 @@ async function submitAlbum(event) {
       title: String(values.get('albumTitle') || '').trim(), artist: String(values.get('artist') || '').trim(),
       description: String(values.get('description') || '').trim(), cover, tracks
     };
+    const siteUrl = new URL('.', location.href).href;
+    for (let i = 0; i < tracks.length; i++) {
+      setStatus(`正在更新单曲分享页 ${i + 1}/${tracks.length}：${tracks[i].title}`);
+      await uploadSharePage(apiBase, branch, token, album, tracks[i], i, siteUrl);
+    }
     let sha;
     try { sha = (await githubRequest(`${apiBase}/contents/album.json?ref=${encodeURIComponent(branch)}`, token)).sha; }
     catch (error) { if (!/404/.test(error.message) && !/Not Found/.test(error.message)) throw error; }
@@ -452,6 +498,20 @@ $('manage-button').addEventListener('click', () => {
 });
 $('close-dialog').addEventListener('click', () => $('manage-dialog').close());
 $('manage-dialog').addEventListener('click', (event) => { if (event.target === $('manage-dialog')) $('manage-dialog').close(); });
+$('close-share').addEventListener('click', () => $('share-dialog').close());
+$('share-dialog').addEventListener('click', (event) => { if (event.target === $('share-dialog')) $('share-dialog').close(); });
+$('copy-share').addEventListener('click', async () => {
+  const input = $('share-url');
+  try {
+    if (!navigator.clipboard?.writeText) throw new Error('clipboard unavailable');
+    await navigator.clipboard.writeText(input.value);
+    $('share-status').textContent = '链接已复制，粘贴到微信聊天即可分享。';
+  } catch {
+    input.focus();
+    input.select();
+    $('share-status').textContent = '请复制已选中的链接，再粘贴到微信聊天。';
+  }
+});
 $('audio-files').addEventListener('change', (event) => { state.files = [...event.target.files]; renderUploadOrder(); });
 $('upload-form').addEventListener('submit', submitAlbum);
 
