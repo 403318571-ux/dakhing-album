@@ -200,7 +200,8 @@ function renderTracks() {
     const share = document.createElement('button');
     share.type = 'button';
     share.className = 'track-share';
-    share.textContent = '分享';
+    share.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.9 15.8 6.1M8.2 13.1l7.6 4.8"/></svg>';
+    share.title = '分享单曲';
     share.setAttribute('aria-label', `分享第 ${index + 1} 首：${track.title}`);
     share.addEventListener('click', () => openShareDialog(track, index));
     li.append(button, share);
