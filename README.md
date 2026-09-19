@@ -1,21 +1,10 @@
 # 得㷫 DAKHING 专辑网站
 
-网站包含封面、15 首按顺序播放的歌曲、点选曲目、进度与音量控制，以及 12 首正篇的歌词。3 首 Bonus Track 暂无歌词。音频是适合网页播放的 MP3；原始 WAV 保留在原文件夹中。
+网站包含封面、15 首按顺序播放的歌曲、点选曲目、进度与音量控制，以及 12 首正篇的歌词。3 首 Bonus Track 暂无歌词。按顺序播放时，每首歌最后 1 秒会与下一首交叉淡化；手动选歌会立即切换。音频是适合网页播放的 MP3；原始 WAV 保留在原文件夹中。
 
-## 发布到 GitHub Pages
+## 网站地址
 
-1. 在 GitHub 用户 `403318571-ux` 下新建**公开**仓库 `dakhing-album`，不要勾选自动添加 README。
-2. 本文件夹已经是一个 Git 仓库，网站和音乐已提交到 `main` 分支。在此文件夹打开 PowerShell，运行：
-
-   ```powershell
-   git -c http.sslBackend=openssl push -u origin main
-   ```
-
-   如果出现 GitHub 登录提示，按提示在浏览器中登录账号 `403318571-ux`。
-3. 在仓库 **Settings → Pages** 中，选择 **Deploy from a branch**，分支设为 `main`，文件夹设为 `/ (root)`，点击 **Save**。
-4. 发布完成后访问 `https://403318571-ux.github.io/dakhing-album/`。
-
-GitHub Pages 发布通常需要几分钟。仓库建议保持在 1 GB 以下；当前网站约 52 MB。
+网站发布在 https://403318571-ux.github.io/dakhing-album/ ，源码和音频保存在 https://github.com/403318571-ux/dakhing-album 。GitHub Pages 使用 `main` 分支的仓库根目录。
 
 ## 今后上传或更新专辑
 
