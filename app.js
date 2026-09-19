@@ -1,9 +1,149 @@
 const $ = (id) => document.getElementById(id);
-const audio = $('audio');
+let audio = $('audio');
+let standby = $('audio-next');
+const players = [audio, standby];
+const CROSSFADE_SECONDS = 1;
+const fadeLevels = new WeakMap([[audio, 1], [standby, 0]]);
+let context;
+let gains;
+let masterGain;
+let transition;
+let animationFrame;
 const state = { album: null, index: -1, files: [], busy: false };
 const fmt = (seconds) => Number.isFinite(seconds) && seconds > 0 ? `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}` : '0:00';
 const cleanName = (name) => name.replace(/\.[^.]+$/, '').replace(/^\d+[\s._-]+/, '').trim() || '未命名歌曲';
 const stem = (name) => name.replace(/\.[^.]+$/, '').toLocaleLowerCase();
+
+function setGain(player, level) {
+  fadeLevels.set(player, level);
+  if (gains) {
+    const gain = gains.get(player).gain;
+    gain.cancelScheduledValues(context.currentTime);
+    gain.value = level;
+  }
+  else player.volume = Number($('volume').value) / 100 * level;
+}
+
+function ensureAudioGraph() {
+  if (context || !(window.AudioContext || window.webkitAudioContext)) return;
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  context = new AudioContextClass();
+  masterGain = context.createGain();
+  masterGain.gain.value = Number($('volume').value) / 100;
+  masterGain.connect(context.destination);
+  gains = new Map(players.map((player) => {
+    const source = context.createMediaElementSource(player);
+    const gain = context.createGain();
+    source.connect(gain).connect(masterGain);
+    player.volume = 1;
+    gain.gain.value = fadeLevels.get(player);
+    return [player, gain];
+  }));
+}
+
+function playActive() {
+  ensureAudioGraph();
+  if (context?.state === 'suspended') context.resume().catch(() => {});
+  audio.play().catch(() => setStatus('歌曲暂时无法播放，请检查文件链接。', true));
+  if (transition) transition.from.play().catch(() => finishTransition());
+}
+
+function prepareNext() {
+  if (transition) return;
+  const next = state.album?.tracks[state.index + 1];
+  if (!next) {
+    standby.pause();
+    standby.removeAttribute('src');
+    standby.load();
+    return;
+  }
+  if (standby.dataset.trackIndex !== String(state.index + 1)) {
+    standby.src = next.src;
+    standby.dataset.trackIndex = String(state.index + 1);
+    standby.load();
+  }
+}
+
+function finishTransition() {
+  if (!transition) return;
+  transition.from.pause();
+  setGain(transition.from, 0);
+  setGain(transition.to, 1);
+  transition = null;
+  prepareNext();
+}
+
+function cancelTransition() {
+  if (transition) transition.from.pause();
+  transition = null;
+  standby.pause();
+  setGain(standby, 0);
+  setGain(audio, 1);
+}
+
+function updateCurrentTrack() {
+  const track = state.album.tracks[state.index];
+  $('current-title').textContent = track.title;
+  $('current-index').textContent = `${String(state.index + 1).padStart(2, '0')} / ${String(state.album.tracks.length).padStart(2, '0')}`;
+  $('elapsed').textContent = '0:00';
+  $('duration').textContent = track.duration ? fmt(track.duration) : '0:00';
+  $('seek').value = 0;
+  $('seek').disabled = !Number.isFinite(audio.duration);
+  renderTracks();
+  renderLyrics(track.lyrics || []);
+}
+
+function startCrossfade() {
+  if (transition || audio.paused || state.index >= state.album.tracks.length - 1 || standby.readyState < 2) return;
+  const remaining = audio.duration - audio.currentTime;
+  if (!Number.isFinite(remaining) || remaining <= 0 || remaining > CROSSFADE_SECONDS) return;
+  const outgoing = audio;
+  const incoming = standby;
+  setGain(incoming, 0);
+  setGain(outgoing, 1);
+  audio = incoming;
+  standby = outgoing;
+  state.index += 1;
+  transition = { from: outgoing, to: incoming, start: outgoing.currentTime, span: Math.min(CROSSFADE_SECONDS, remaining) };
+  if (gains) {
+    const start = context.currentTime;
+    const duration = transition.span;
+    const steps = 32;
+    const fadeOut = Float32Array.from({ length: steps }, (_, i) => Math.cos(i / (steps - 1) * Math.PI / 2));
+    const fadeIn = Float32Array.from({ length: steps }, (_, i) => Math.sin(i / (steps - 1) * Math.PI / 2));
+    gains.get(outgoing).gain.setValueCurveAtTime(fadeOut, start, duration);
+    gains.get(incoming).gain.setValueCurveAtTime(fadeIn, start, duration);
+  }
+  updateCurrentTrack();
+  incoming.play().catch(() => {
+    if (transition?.to !== incoming) return;
+    transition = null;
+    incoming.pause();
+    audio = outgoing;
+    standby = incoming;
+    state.index -= 1;
+    setGain(outgoing, 1);
+    setGain(incoming, 0);
+    updateCurrentTrack();
+  });
+}
+
+function tick() {
+  animationFrame = null;
+  if (transition) {
+    const progress = Math.max(0, Math.min(1, (transition.from.currentTime - transition.start) / transition.span));
+    if (!gains) {
+      setGain(transition.from, Math.cos(progress * Math.PI / 2));
+      setGain(transition.to, Math.sin(progress * Math.PI / 2));
+    }
+    if (progress >= 1) finishTransition();
+  } else if (!audio.paused) startCrossfade();
+  if (!audio.paused || transition && !transition.from.paused) animationFrame = requestAnimationFrame(tick);
+}
+
+function startTicker() {
+  if (animationFrame == null) animationFrame = requestAnimationFrame(tick);
+}
 
 function showAlbum(album) {
   state.album = album;
@@ -47,18 +187,16 @@ function renderTracks() {
 function selectTrack(index, shouldPlay) {
   const track = state.album?.tracks[index];
   if (!track) return;
+  audio.pause();
+  cancelTransition();
   state.index = index;
   audio.src = track.src;
+  audio.dataset.trackIndex = String(index);
   audio.load();
-  $('current-title').textContent = track.title;
-  $('current-index').textContent = `${String(index + 1).padStart(2, '0')} / ${String(state.album.tracks.length).padStart(2, '0')}`;
-  $('elapsed').textContent = '0:00';
-  $('duration').textContent = track.duration ? fmt(track.duration) : '0:00';
-  $('seek').value = 0;
+  updateCurrentTrack();
   $('seek').disabled = true;
-  renderTracks();
-  renderLyrics(track.lyrics || []);
-  if (shouldPlay) audio.play().catch(() => setStatus('歌曲暂时无法播放，请检查文件链接。', true));
+  prepareNext();
+  if (shouldPlay) playActive();
 }
 
 function renderLyrics(lines) {
@@ -251,17 +389,56 @@ async function submitAlbum(event) {
   }
 }
 
-audio.volume = 0.8;
-audio.addEventListener('play', () => { $('play-button').setAttribute('aria-label', '暂停'); $('play-icon').innerHTML = '<path d="M7 5h3v14H7zm7 0h3v14h-3z"/>'; });
-audio.addEventListener('pause', () => { $('play-button').setAttribute('aria-label', '播放'); $('play-icon').innerHTML = '<path d="m8 5 11 7-11 7V5Z"/>'; });
-audio.addEventListener('loadedmetadata', () => { $('duration').textContent = fmt(audio.duration); $('seek').disabled = false; });
-audio.addEventListener('timeupdate', () => { $('elapsed').textContent = fmt(audio.currentTime); $('seek').value = audio.duration ? Math.round(audio.currentTime / audio.duration * 1000) : 0; updateLyric(); });
-audio.addEventListener('ended', () => { if (state.index < state.album.tracks.length - 1) selectTrack(state.index + 1, true); });
-$('play-button').addEventListener('click', () => { if (audio.paused) audio.play().catch(() => setStatus('歌曲暂时无法播放，请检查文件链接。', true)); else audio.pause(); });
+setGain(audio, 1);
+setGain(standby, 0);
+players.forEach((player) => {
+  player.addEventListener('play', () => {
+    if (player !== audio) return;
+    $('play-button').setAttribute('aria-label', '暂停');
+    $('play-icon').innerHTML = '<path d="M7 5h3v14H7zm7 0h3v14h-3z"/>';
+    startTicker();
+  });
+  player.addEventListener('pause', () => {
+    if (player !== audio) return;
+    $('play-button').setAttribute('aria-label', '播放');
+    $('play-icon').innerHTML = '<path d="m8 5 11 7-11 7V5Z"/>';
+  });
+  player.addEventListener('loadedmetadata', () => {
+    if (player !== audio) return;
+    $('duration').textContent = fmt(player.duration);
+    $('seek').disabled = false;
+  });
+  player.addEventListener('timeupdate', () => {
+    if (player !== audio) return;
+    $('elapsed').textContent = fmt(player.currentTime);
+    $('seek').value = player.duration ? Math.round(player.currentTime / player.duration * 1000) : 0;
+    updateLyric();
+    if (!transition) startCrossfade();
+  });
+  player.addEventListener('ended', () => {
+    if (transition?.from === player) { finishTransition(); return; }
+    if (player === audio && state.index < state.album.tracks.length - 1) selectTrack(state.index + 1, true);
+  });
+});
+$('play-button').addEventListener('click', () => {
+  if (audio.paused) playActive();
+  else {
+    audio.pause();
+    if (transition) transition.from.pause();
+    if (context?.state === 'running') context.suspend().catch(() => {});
+  }
+});
 $('prev-button').addEventListener('click', () => selectTrack(Math.max(0, state.index - 1), true));
 $('next-button').addEventListener('click', () => selectTrack(Math.min(state.album.tracks.length - 1, state.index + 1), true));
-$('seek').addEventListener('input', (event) => { if (audio.duration) audio.currentTime = Number(event.target.value) / 1000 * audio.duration; });
-$('volume').addEventListener('input', (event) => { audio.volume = Number(event.target.value) / 100; });
+$('seek').addEventListener('input', (event) => {
+  if (transition) finishTransition();
+  if (audio.duration) audio.currentTime = Number(event.target.value) / 1000 * audio.duration;
+});
+$('volume').addEventListener('input', (event) => {
+  const level = Number(event.target.value) / 100;
+  if (masterGain) masterGain.gain.value = level;
+  else players.forEach((player) => setGain(player, fadeLevels.get(player)));
+});
 $('tracks-tab').addEventListener('click', () => setTab('tracks'));
 $('lyrics-tab').addEventListener('click', () => setTab('lyrics'));
 $('manage-button').addEventListener('click', () => {
